@@ -1,6 +1,6 @@
 // Type "node ." in terminal to run this script.
 
-// Challenege: If a 1 is not surrounded by another 1, change it to 0.
+// Challenge: If a 1 is not surrounded by another 1, change it to 0.
 const arr = [
   [1, 0, 0, 0],
   [0, 1, 0, 0],
@@ -15,7 +15,7 @@ const expected = [
   [0, 0, 0, 1],
 ];
 
-// Lesson learned: Use these long for loops instead of (for row in arr) because that will return the entire array, which isn't what you want when calling getLeft() and the other functions.
+// Lesson Learned: Use these long for loops instead of (for row in arr) because that will return the entire array, which isn't what you want when calling getLeft() and the other functions.
 (function solve() {
   for (let row = 0; row < arr.length; row++) {
     for (let column = 0; column < arr[row].length; column++) {
